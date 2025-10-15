@@ -430,7 +430,6 @@ h1 {
     position: absolute;
     inset: 0;
     z-index: 2;
-    pointer-events: none;
 }
 .anatomy-map .map-wrap {
     position: relative;
@@ -459,7 +458,6 @@ h1 {
 
 }
 
-/* координаты */
 .main {
     top: 262.94px;
     left: 290.34px;
@@ -547,7 +545,6 @@ h1 {
     width: auto;
     height: auto;
     max-width: none;
-    pointer-events: none;
 
 }
 
@@ -582,7 +579,6 @@ h1 {
 .ligs>div {
     position: absolute;
     white-space: nowrap;
-    pointer-events: none;
 }
 
 .lig1 {
@@ -627,7 +623,6 @@ h1 {
     width: 1932.44px;
     height: 2828.91px;
     z-index: 2;
-    pointer-events: none;
     transform: translate(100px, 100px);
 }
 
@@ -638,7 +633,6 @@ h1 {
     line-height: 90%;
     white-space: nowrap;
     transform-origin: 50% 50%;
-    /* вращаем вокруг центра */
 }
 
 .fish1 {
@@ -758,31 +752,31 @@ h1 {
 }
 
 .aut {
-    top: 695.5px;
-    left: 418.94px;
+    top: 660.5px;
+    left: 408.94px;
 }
 
 .name {
-    top: 727.62px;
-    left: 418.94px;
+    top: 692.62px;
+    left: 408.94px;
 }
 
 .cur {
-    top: 942.5px;
-    left: 274px;
+    top: 907.5px;
+    left: 264px;
 }
 
 .cur-name {
-    top: 974.62px;
-    left: 274px;
+    top: 939.62px;
+    left: 264px;
 }
 
 .grp {
-    top: 865.5px;
-    left: 913.94px;
+    top: 830.5px;
+    left: 903.94px;
 }
 
 .grp-num {
-    top: 897.62px;
-    left: 913.94px;
+    top: 862.62px;
+    left: 903.94px;
 }
