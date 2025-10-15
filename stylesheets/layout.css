@@ -1,0 +1,803 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D4ECFF;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    font-family: 'Spectral', serif;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    position: absolute;
+    top: 61px;
+    left: 83px;
+    right: 234px;
+    z-index: 1;
+    color: #FFF;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 90%;
+    margin: 0;
+}
+
+.main_screen {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    height: 960px;
+    position: relative;
+    background-color: #D4ECFF;
+    overflow: visible;
+    z-index: 1;
+}
+
+.lighthouse img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100%; */
+    z-index: 2;
+    object-fit: cover;
+    display: block;
+}
+.about_font {
+    position: relative;
+    width: 1440px;
+    height: 826px;
+    background-color: #D4ECFF;
+    overflow: visible;
+    z-index: 2;
+}
+
+.ship img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 826.5px;
+    object-fit: cover;
+    z-index: 1;
+    overflow: visible;
+}
+
+.about_content {
+    position: absolute;
+    right: 71px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0px;
+    margin-top: -50px;
+}
+.title {
+    width: 488px;
+    height: 157px;
+    box-sizing: border-box;
+    background: url("../images/подложка.png") no-repeat 0 0 / 100% 100%;
+    padding: 36px 152px 30px 172px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-right: -10px;
+    margin-bottom: 40px;
+}
+
+.title_text {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: -1.2px;
+    margin: 0;
+
+}
+
+.sub {
+    width: 200px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px;
+    margin: 0;
+}
+.text-blocks {
+    width: 457px;
+    color: #02304A;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0;
+}
+
+.text-blocks p {
+    margin: 0;
+}
+
+.glyphs_top_section .text-blocks {
+    position: absolute;
+    left: 50px;
+    top: 91px;
+    width: 502px;
+    color: #02304A;
+    font-size: 22px;
+    line-height: 120%;
+}
+
+.glyphs_top_section {
+    position: relative;
+    width: 1440px;
+    height: 235px;
+    background-color: #D4ECFF;
+    margin: 0 auto;
+    z-index: 2;
+}
+.glyphs_top_section .about_content {
+    top: auto;
+    transform: none;
+    bottom: auto;
+    right: 50px;
+    top: 77px;
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.glyphs_ticket {
+    position: relative;
+    width: 1340px;
+    height: 654.386px;
+    margin: 30px auto 0;
+    background: #D4ECFF;
+}
+.glyphs_ticket img {
+    max-width: none;
+    display: block;
+}
+.glyphs_ticket .b1 {
+    position: relative;
+    width: 1340px;
+    height: 654.386px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.glyphs_ticket .txt {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    color: #450809;
+    pointer-events: none;
+    margin: 0;
+}
+
+.t1,
+.t2 {
+    position: absolute;
+    white-space: nowrap;
+    z-index: 2;
+    color: #450809;
+    margin: 0;
+    line-height: 0.9;
+
+}
+
+.t1 {
+    top: 37.65px;
+    left: 235.63px;
+    font-size: 99.364px;
+    font-weight: 800;
+    letter-spacing: -3.975px;
+}
+
+
+.t2 {
+    top: 141.27px;
+    left: 235.63px;
+    font-size: 56.78px;
+    font-weight: 600;
+    letter-spacing: -2.271px;
+}
+
+.label {
+    color: #450809;
+    font-family: 'Spectral', serif;
+    font-size: 32.194px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -1.288px;
+    display: inline;
+    margin-right: 10px;
+}
+
+.sample {
+    color: #450809;
+    font-family: 'Spectral', serif;
+    font-size: 18.029px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: -0.721px;
+    position: relative;
+    display: inline-block;
+    
+}
+.footer {
+    color: #450809;
+    font-family: 'Spectral', serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 98%;
+    width: 1080px;
+}
+.ticket_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1340px;
+    width: auto;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: center;
+    z-index: 1;
+}
+
+.rows {
+    position: absolute;
+    left: 244.75px;
+    top: 252.69px;
+    display: flex;
+    flex-direction: column;
+    gap: 24.66px;
+    z-index: 2;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 6.07px;
+    margin: 0;
+}
+.row .sample {
+    position: relative;
+    top: 3.86px;
+}
+.footer {
+    position: absolute;
+    top: 552px;
+    left: 244.75px;
+    right: 16px;
+    margin: 0;
+
+    color: #450809;
+    font-family: 'Spectral', serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 0.98;
+
+    overflow: hidden;
+    text-overflow: clip;
+}
+.sample::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3.32px;
+    width: 100%;
+    height: 1px;
+    background-color: #450809;
+}
+
+.sample .inner {
+    display: inline-block;
+    transform: translateY(-6px);
+}
+
+.frac {
+    font-variant-numeric: diagonal-fractions;
+    
+}
+.sup-up {
+    font-size: 0.62em;
+    vertical-align: 0.45em;
+   
+}
+
+.sub-down {
+    font-size: 0.62em;
+    vertical-align: -0.15em;
+
+}
+
+.langs_section {
+    position: relative;
+    width: 1440px;
+    height: 1280px;
+    background-color: #D4ECFF;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.langs_section .about_content {
+    position: absolute;
+    top: 227px;
+    right: 71px;
+    transform: none;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.langs_section .text-blocks {
+    position: absolute;
+    left: 50px;
+    top: 254px;
+    width: 559px;
+    color: #02304A;
+    font-size: 22px;
+    line-height: 120%;
+    z-index: 2;
+    }
+.langs_img {
+    margin: 353px auto 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 960px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.anatomy {
+    position: relative;
+    width: 1440px;
+    min-height: 135px;
+    margin: 163.5px auto 0;
+    background: #D4ECFF;
+    overflow: visible;
+    z-index: 2;
+}
+
+.anatomy .about_content {
+    position: absolute;
+    right: 50px;
+    top: 26px;
+    transform: none;
+    z-index: 3;
+}
+
+.anatomy .text-blocks {
+    position: absolute;
+    left: 50px;
+    top: 14px;
+    transform: none;
+    width: 611px;
+    color: #02304A;
+    font-size: 22px;
+    line-height: 120%;
+    text-wrap: balance;
+    z-index: 3;
+}
+
+.anatomy_map {
+    width: 1440px;
+    margin: 163.5px auto 0;
+    background: #D4ECFF;
+    position: relative;
+    z-index: 2;
+    margin: 22px auto 0;
+}
+
+.map_box {
+    position: relative;
+    width: 1426px;
+    height: 891px;
+    margin: 0 auto;
+}
+
+.map_img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.map_overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+.anatomy-map .map-wrap {
+    position: relative;
+    width: 1426px;
+    height: 891px;
+    margin: 22px auto 0;
+}
+
+.anatomy-map .map-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cap {
+    position: absolute;
+    color: #450809;
+    font-family: 'Spectral', serif;
+    font-size: 24.392px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -0.976px;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* координаты */
+.main {
+    top: 262.94px;
+    left: 290.34px;
+}
+
+.half {
+    top: 627.53px;
+    left: 324.93px;
+}
+
+.drop {
+    top: 280.04px;
+    left: 687.37px;
+}
+
+.aperture {
+    top: 441.41px;
+    left: 596.26px;
+}
+
+.blob {
+    top: 556.25px;
+    left: 805.21px;
+}
+
+.accent {
+    right: 400px;
+    bottom: 215px;
+}
+
+.conn {
+    top: 412.7px;
+    left: 980.49px;
+    width: 220px;
+    white-space: normal;
+}
+
+.serif {
+    top: 180.5px;
+    left: 1006.24px;
+}
+
+.ligatures {
+    position: relative;
+    width: 1440px;
+    margin: 180px auto 0;
+    background: #D4ECFF;
+    overflow: visible;
+    z-index: 2;
+}
+
+.ligatures .about_content {
+    position: absolute;
+    right: 50px;
+    top: 115px;
+    z-index: 3;
+}
+
+.ligatures .text-blocks {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    width: 619px;
+    z-index: 3;
+}
+
+.weights {
+    position: relative;
+    width: 1440px;
+    margin: 22px auto 0;
+    background: #D4ECFF;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.canvas {
+    position: relative;
+    width: 1932.44px;
+    margin: 200px auto 0;
+}
+
+
+.weights_img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: none;
+    pointer-events: none;
+
+}
+
+.weights .text-blocks {
+    position: absolute;
+    top: 1326px;
+    left: 50px;
+    width: 460px;
+    z-index: 5;
+}
+
+.weights .about_content {
+    position: absolute;
+    top: 1320px;
+    right: 50px;
+    transform: none;
+    z-index: 5;
+}
+
+.ligs {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    font-family: 'Spectral', serif;
+    color: #02304A;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 90%;
+    letter-spacing: -0.88px;
+}
+
+.ligs>div {
+    position: absolute;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.lig1 {
+    top: 440px;
+    left: 148px;
+}
+
+.lig2 {
+    top: 440px;
+    left: 584px;
+}
+
+.lig3 {
+    top: 440px;
+    left: 1041px;
+}
+
+.lig4 {
+    top: 885px;
+    left: 170px;
+}
+
+.lig5a {
+    top: 885px;
+    left: 656px;
+}
+
+.lig5b {
+    top: 885px;
+    left: 824px;
+}
+
+.lig6 {
+    top: 885px;
+    left: 1104px;
+}
+
+.fishes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1932.44px;
+    height: 2828.91px;
+    z-index: 2;
+    pointer-events: none;
+    transform: translate(100px, 100px);
+}
+
+.fishes>div {
+    position: absolute;
+    color: #02304A;
+    font-family: 'Spectral', serif;
+    line-height: 90%;
+    white-space: nowrap;
+    transform-origin: 50% 50%;
+    /* вращаем вокруг центра */
+}
+
+.fish1 {
+    /* Extra Light */
+    top: 1827px;
+    left: 350px;
+    font-size: 82.373px;
+    font-weight: 275;
+    transform: translate(-50%, -50%) rotate(15deg);
+}
+
+.fish2 {
+    /* Light */
+    top: 2420px;
+    left: 350px;
+    font-size: 82.373px;
+    font-weight: 300;
+    transform: translate(-50%, -50%) rotate(-36.436deg);
+}
+
+.fish3 {
+    /* Semi Bold */
+    top: 2101.3px;
+    left: 341.56px;
+    font-size: 82.373px;
+    font-weight: 600;
+    transform: translate(-50%, -50%) rotate(-13.208deg);
+}
+
+.fish4 {
+    /* Medium */
+    top: 1555.43px;
+    left: 492.3px;
+    font-size: 78.06px;
+    font-weight: 500;
+    transform: translate(-50%, -50%) rotate(41.833deg);
+}
+
+.fish5 {
+    /* Bold */
+    top: 1490.74px;
+    left: 920px;
+    font-size: 82.373px;
+    font-weight: 500;
+    transform: translate(-50%, -50%) rotate(-68.861deg);
+}
+
+.fish6 {
+    /* Extra Bold */
+    top: 2330px;
+    left: 650px;
+    font-size: 82.373px;
+    font-weight: 800;
+    transform: translate(-50%, -50%) rotate(-71.416deg);
+}
+
+.fish7 {
+    /* Regular */
+    top: 2270px;
+    left: 950px;
+    font-size: 82px;
+    font-weight: 400;
+    letter-spacing: -2.46px;
+    transform: translate(-50%, -50%) rotate(75deg);
+}
+
+#/* --- Общий контейнер --- */
+#footer {
+    position: relative;
+    width: 1440px;
+    margin: 20px auto 0;
+    background: #D4ECFF;
+    overflow: hidden;
+}
+
+.footer-canvas {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* --- Картинка --- */
+.footer-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+}
+
+/* --- Контейнер с текстом --- */
+.footer-labels {
+    position: absolute;
+    inset: 0;
+    /* растянуть по всей картинке */
+    z-index: 3;
+}
+
+/* --- Общие стили текста --- */
+.lab {
+    position: absolute;
+    color: #02304A;
+    font-family: 'Spectral', serif;
+    line-height: 86%;
+    white-space: nowrap;
+}
+
+/* --- Мелкий текст (Автор, Куратор, Группа) --- */
+.aut,
+.cur,
+.grp {
+    font-size: 23.502px;
+    font-weight: 400;
+    letter-spacing: -0.705px;
+}
+
+/* --- Основной текст (имена и номер группы) --- */
+.name,
+.cur-name,
+.grp-num {
+    font-size: 39.169px;
+    font-weight: 400;
+    letter-spacing: -1.175px;
+}
+
+.aut {
+    top: 695.5px;
+    /* было 665.5 */
+    left: 418.94px;
+}
+
+.name {
+    top: 727.62px;
+    /* было 697.62 */
+    left: 418.94px;
+}
+
+.cur {
+    top: 942.5px;
+    /* было 912.5 */
+    left: 274px;
+}
+
+.cur-name {
+    top: 974.62px;
+    /* было 944.62 */
+    left: 274px;
+}
+
+.grp {
+    top: 865.5px;
+    /* было 835.5 */
+    left: 913.94px;
+}
+
+.grp-num {
+    top: 897.62px;
+    /* было 867.62 */
+    left: 913.94px;
+}
