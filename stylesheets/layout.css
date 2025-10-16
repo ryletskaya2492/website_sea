@@ -16,7 +16,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+/* ОБЛОЖКА */
 h1 {
     position: absolute;
     top: 61px;
@@ -50,6 +50,8 @@ h1 {
     object-fit: cover;
     display: block;
 }
+
+/* 1 БЛОК "О ШРИФТЕ" */
 .about_font {
     position: relative;
     width: 1440px;
@@ -86,7 +88,7 @@ h1 {
     width: 488px;
     height: 157px;
     box-sizing: border-box;
-    background: url("../images/подложка.png") no-repeat 0 0 / 100% 100%;
+    background: url("../images/under.png") no-repeat 0 0 / 100% 100%;
     padding: 36px 152px 30px 172px;
 
     display: flex;
@@ -132,6 +134,7 @@ h1 {
     margin: 0;
 }
 
+/* 2 БЛОК С ГЛИФАМИ */
 .glyphs_top_section .text-blocks {
     position: absolute;
     left: 50px;
@@ -219,7 +222,6 @@ h1 {
 
 .label {
     color: #450809;
-    font-family: 'Spectral', serif;
     font-size: 32.194px;
     font-style: normal;
     font-weight: 500;
@@ -231,7 +233,6 @@ h1 {
 
 .sample {
     color: #450809;
-    font-family: 'Spectral', serif;
     font-size: 18.029px;
     font-style: normal;
     font-weight: 400;
@@ -243,7 +244,6 @@ h1 {
 }
 .footer {
     color: #450809;
-    font-family: 'Spectral', serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 300;
@@ -307,10 +307,6 @@ h1 {
     background-color: #450809;
 }
 
-.sample .inner {
-    display: inline-block;
-    transform: translateY(-6px);
-}
 
 .frac {
     font-variant-numeric: diagonal-fractions;
