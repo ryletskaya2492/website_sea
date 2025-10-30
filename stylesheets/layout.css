@@ -160,7 +160,7 @@ h1 {
     max-width: none;
     display: block;
 }
-.glyphs_ticket .b1 {
+.glyphs_ticket .gl_frame {
     position: relative;
     width: 1340px;
     height: 654.386px;
@@ -176,8 +176,8 @@ h1 {
     margin: 0;
 }
 
-.t1,
-.t2 {
+.h1,
+.h2 {
     position: absolute;
     white-space: nowrap;
     z-index: 2;
@@ -187,7 +187,7 @@ h1 {
 
 }
 
-.t1 {
+.h1 {
     top: 38px;
     left: 235px;
     font-size: 100px;
@@ -196,7 +196,7 @@ h1 {
 }
 
 
-.t2 {
+.h2 {
     top: 141px;
     left: 236px;
     font-size: 57px;
@@ -278,18 +278,18 @@ h1 {
 (из обычных цифр в над/под строчные), так как автоматически эти символы не импортируются из гугл фонта */
 
 /* диагональные дроби */
-.frac {
+.num {
     font-variant-numeric: diagonal-fractions;
     
 }
 /* над строчные */
-.sup-up {
+.up {
     font-size: 0.62em;
     vertical-align: 0.45em;
    
 }
 /* под строчные */
-.sub-down {
+.down {
     font-size: 0.62em;
     vertical-align: -0.15em;
 
@@ -365,7 +365,7 @@ h1 {
 }
 
 
-.anatomy-map .map-wrap {
+.anatomy-map .map_frame {
     position: relative;
     width: 1426px;
     height: 891px;
