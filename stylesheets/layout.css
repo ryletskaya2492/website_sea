@@ -8,9 +8,8 @@ html {
 
 body {
     background-color: #D4ECFF;
-    margin: 0 auto;
+    margin: 0;
     position: relative;
-    display: block;
     font-family: 'Spectral', serif;
     font-synthesis: none;
     -webkit-font-smoothing: antialiased;
@@ -41,6 +40,8 @@ h1 {
     background-color: #D4ECFF;
 
 }
+
+/* для места под маяк */
 .main_screen span:nth-of-type(2) {
     padding-left: 200px;
 }
@@ -52,8 +53,6 @@ h1 {
     width: 1440px;
     margin: 0 auto;
     background-color: #D4ECFF;
-    overflow: visible;
-    z-index: 2;
 }
 
 .ship img {
@@ -64,6 +63,7 @@ h1 {
 .about_content {
     display: flex;
     flex-direction: column;
+    /* по правому краю */
     align-items: flex-end;
     gap: 0px;
     margin-top: 100px;
@@ -72,7 +72,6 @@ h1 {
 .title {
     width: 488px;
     height: 157px;
-    box-sizing: border-box;
     background: url("../images/under.svg") no-repeat 0 0 / 100% 100%;
     padding: 36px 152px 30px 172px;
     display: flex;
@@ -149,34 +148,7 @@ h1 {
     margin-right: 50px;
 }
 
-.glyphs__bar .about_content .title {
-    width: 488px;
-    height: 157px;
-    box-sizing: border-box;
-    padding: 36px 152px 30px 172px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.glyphs__bar .about_content .title_text {
-    color: #FFF;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 90%;
-    letter-spacing: -1.2px;
-    margin: 0;
-}
-
-.glyphs__bar .about_content .sub {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 54px;
-    margin: 0;
-    width: 200px;
-}
 .glyphs_ticket {
     position: relative;
     width: 1340px;
@@ -194,9 +166,6 @@ h1 {
     height: 654.386px;
     margin: 0 auto;
     background: url("../images/ticket.svg") no-repeat center / cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .glyphs_ticket .txt {
@@ -219,77 +188,62 @@ h1 {
 }
 
 .t1 {
-    top: 37.65px;
-    left: 235.63px;
-    font-size: 99.364px;
+    top: 38px;
+    left: 235px;
+    font-size: 100px;
     font-weight: 800;
     letter-spacing: -3.975px;
 }
 
 
 .t2 {
-    top: 141.27px;
-    left: 235.63px;
-    font-size: 56.78px;
+    top: 141px;
+    left: 236px;
+    font-size: 57px;
     font-weight: 600;
     letter-spacing: -2.271px;
 }
 
 .label {
     color: #450809;
-    font-size: 32.194px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: 90%;
     letter-spacing: -1.288px;
-    display: inline;
     margin-right: 10px;
 }
 
 .sample {
     color: #450809;
-    font-size: 18.029px;
-    font-style: normal;
+    font-size: 18px;
     font-weight: 400;
     line-height: 90%;
     letter-spacing: -0.721px;
     position: relative;
-    display: inline-block;
     
 }
-.footer {
-    color: #450809;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 98%;
-    width: 1080px;
-}
+
 .ticket_img {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 1340px;
-    width: auto;
-    transform: translate(-50%, -50%) rotate(-90deg);
     transform-origin: center;
     z-index: 1;
 }
 
 .rows {
     position: absolute;
-    left: 244.75px;
-    top: 252.69px;
+    left: 245px;
+    top: 253px;
     display: flex;
     flex-direction: column;
-    gap: 24.66px;
+    gap: 25px;
     z-index: 2;
 }
 
 .row {
     display: flex;
     align-items: flex-start;
-    gap: 6.07px;
+    gap: 7px;
     margin: 0;
 }
 .row .sample {
@@ -299,19 +253,16 @@ h1 {
 .footer {
     position: absolute;
     top: 552px;
-    left: 244.75px;
+    left: 245px;
     right: 16px;
     margin: 0;
-
     color: #450809;
-    font-family: 'Spectral', serif;
     font-size: 32px;
     font-weight: 300;
     line-height: 0.98;
-
-    overflow: hidden;
-    text-overflow: clip;
 }
+
+/* нижние подчеркивание для примеров */
 .sample::after {
     content: "";
     position: absolute;
@@ -323,23 +274,28 @@ h1 {
 }
 
 
+/* open type фича: пришлось прописывать для подстрочных и надсточных дополнительные строки кода 
+(из обычных цифр в над/под строчные), так как автоматически эти символы не импортируются из гугл фонта */
+
+/* диагональные дроби */
 .frac {
     font-variant-numeric: diagonal-fractions;
     
 }
+/* над строчные */
 .sup-up {
     font-size: 0.62em;
     vertical-align: 0.45em;
    
 }
-
+/* под строчные */
 .sub-down {
     font-size: 0.62em;
     vertical-align: -0.15em;
 
 }
 
-
+/* БЛОК ПРО ЯЗЫКИ  */
 .langs {
     background: #D4ECFF;
 }
@@ -370,6 +326,7 @@ h1 {
     margin-right: 50px;
 }
 
+/* контейнер под изображение */
 .langs__art {
     width: 1440px;
     margin: 22px auto 0;
@@ -377,18 +334,16 @@ h1 {
 
 .langs_img {
     display: block;
-    width: 1426px;
     height: auto;
     margin: -70px auto 0;
 }
 
+/* БЛОК С АНАТОМИЕЙ ШРИФТА */
 .anatomy {
-    background: #D4ECFF;
     width: 1440px;
     margin: 220px auto 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .anatomy .text-blocks {
@@ -418,16 +373,14 @@ h1 {
 }
 
 .anatomy-map .map-img {
-    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .cap {
     position: absolute;
     color: #450809;
-    font-size: 24.392px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 90%;
     letter-spacing: -0.976px;
@@ -435,28 +388,28 @@ h1 {
 }
 
 .main {
-    top: 262.94px;
-    left: 290.34px;
+    top: 263px;
+    left: 290px;
 }
 
 .half {
-    top: 627.53px;
-    left: 324.93px;
+    top: 628px;
+    left: 325px;
 }
 
 .drop {
-    top: 280.04px;
-    left: 687.37px;
+    top: 280px;
+    left: 687px;
 }
 
 .aperture {
-    top: 441.41px;
-    left: 596.26px;
+    top: 441px;
+    left: 596px;
 }
 
 .blob {
-    top: 556.25px;
-    left: 805.21px;
+    top: 556px;
+    left: 805px;
 }
 
 .accent {
@@ -465,15 +418,15 @@ h1 {
 }
 
 .conn {
-    top: 412.7px;
-    left: 980.49px;
+    top: 413px;
+    left: 980px;
     width: 220px;
     white-space: normal;
 }
 
 .serif {
     top: 180.5px;
-    left: 1006.24px;
+    left: 1006px;
 }
 
 /* ЛИГАТУРЫ */
@@ -518,8 +471,8 @@ h1 {
 
 .canvas {
     position: relative;
-    width: 1932.44px;
-    height: 2828.91px;
+    width: 1932px;
+    height: 2829px;
     margin: 0;
     left: 0;
 }
@@ -531,7 +484,6 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
     z-index: 1;
 }
 
@@ -540,12 +492,10 @@ h1 {
     top: 1126px;
     left: 50px;
     width: 460px;
-
     color: #02304A;
     font-size: 24px;
     line-height: 120%;
     letter-spacing: -0.8px;
-
     z-index: 5;
 }
 
@@ -620,8 +570,7 @@ h1 {
     position: absolute;
     color: #ACD1FF;
     line-height: 90%;
-    transform-origin: 50% 50%;
-    z-index: 4;
+    z-index: 2;
 }
 /* Extra Light */
 .fish1 {
@@ -687,9 +636,8 @@ h1 {
     transform: rotate(75deg);
 }
 
-
-
-#footer {
+/* ФУТЕР */
+.footer_general {
     position: relative;
     width: 1440px;
     margin: 20px auto 0;
@@ -700,7 +648,6 @@ h1 {
 .footer-canvas {
     position: relative;
     width: 100%;
-    height: auto;
 }
 
 .footer-img {
@@ -713,20 +660,19 @@ h1 {
 .footer-labels {
     position: absolute;
     inset: 0;
-    z-index: 3;
+    z-index: 2;
 }
 
 .lab {
     position: absolute;
     color: #02304A;
-    font-family: 'Spectral', serif;
     line-height: 86%;
 }
 
 .aut,
 .cur,
 .grp {
-    font-size: 23.502px;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: -0.705px;
 }
@@ -735,7 +681,7 @@ h1 {
 .name,
 .cur-name,
 .grp-num {
-    font-size: 39.169px;
+    font-size: 39px;
     font-weight: 400;
     letter-spacing: -1.175px;
 }
@@ -766,7 +712,7 @@ h1 {
 }
 
 .grp-num {
-    top: 918.62px;
+    top: 918px;
     left: 870px;
 }
 .hse_logo {
