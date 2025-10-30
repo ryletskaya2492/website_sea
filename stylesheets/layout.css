@@ -21,7 +21,6 @@ h1 {
     position: absolute;
     top: 61px;
     left: 83px;
-    right: 234px;
     z-index: 1;
     color: #FFF;
     font-size: 200px;
@@ -32,11 +31,13 @@ h1 {
 }
 
 .main_screen {
+    position: relative;
     width: 1440px;
     margin: 0 auto;
     height: 960px;
     background-image: url('../images/light.png');
     background-size: cover;
+    background-position: center;
     background-color: #D4ECFF;
 
 }
@@ -633,7 +634,7 @@ h1 {
 /* Light */
 .fish2 {
     top: 2000px;
-    left: 1130px;
+    left: 1130  px;
     font-size: 82.373px;
     font-weight: 300;
     transform: rotate(15deg);
