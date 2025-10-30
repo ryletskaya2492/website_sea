@@ -64,6 +64,7 @@ h1 {
     align-items: flex-end;
     gap: 0px;
     margin-top: 100px;
+    
 }
 .title {
     width: 488px;
@@ -76,6 +77,8 @@ h1 {
     justify-content: space-between;
     margin-right: -10px;
     margin-bottom: 40px;
+    flex: none;
+    align-self: flex-end;
 }
 
 .title_text {
@@ -114,31 +117,63 @@ h1 {
 }
 
 /* 2 БЛОК С ГЛИФАМИ */
-.glyphs_top_section .text-blocks {
+.glyphs {
+    background: #D4ECFF;
+}
+
+.glyphs__bar {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.glyphs__bar .text-blocks {
+    width: 800px;
     color: #02304A;
     font-size: 22px;
     line-height: 120%;
-    padding: 14px 160px 0 50px;
-    margin-top: 70px;
+    padding-left: 50px;
+    padding-right: 160px;
+    margin-top: 200px;
 }
-.glyphs_top_section > div {
-    width: 50%;
-}
-.glyphs_top_section {
+
+.glyphs__bar .about_content {
     display: flex;
-    width: 1440px;
-    height: 235px;
-    background-color: #D4ECFF;
-    margin: 0 auto;
-    z-index: 2;
-    margin-top: 100px;
-}
-.glyphs_top_section .about_content {
-    display: flex;
-    margin-top: 0;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 70px;
+    margin-top: 190px;
+    margin-right: 50px;
+}
+
+.glyphs__bar .about_content .title {
+    width: 488px;
+    height: 157px;
+    box-sizing: border-box;
+    background: url("../images/under.png") no-repeat 0 0 / 100% 100%;
+    padding: 36px 152px 30px 172px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.glyphs__bar .about_content .title_text {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 90%;
+    letter-spacing: -1.2px;
+    margin: 0;
+}
+
+.glyphs__bar .about_content .sub {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 54px;
+    margin: 0;
+    width: 200px;
 }
 .glyphs_ticket {
     position: relative;
@@ -156,7 +191,10 @@ h1 {
     width: 1340px;
     height: 654.386px;
     margin: 0 auto;
-    overflow: hidden;
+    background: url("../images/ticket.png") no-repeat center / cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .glyphs_ticket .txt {
@@ -164,7 +202,6 @@ h1 {
     inset: 0;
     z-index: 2;
     color: #450809;
-    pointer-events: none;
     margin: 0;
 }
 
@@ -345,10 +382,6 @@ h1 {
 
 .anatomy {
     background: #D4ECFF;
-}
-
-
-.anatomy {
     width: 1440px;
     margin: 220px auto 0;
     display: flex;
@@ -392,7 +425,6 @@ h1 {
 .cap {
     position: absolute;
     color: #450809;
-    font-family: 'Spectral', serif;
     font-size: 24.392px;
     font-weight: 500;
     line-height: 90%;
@@ -462,21 +494,21 @@ h1 {
     line-height: 120%;
     padding-left: 50px;
     padding-right: 160px;
-    margin-top: 130px;
+    margin-top: 80px;
 }
 
 .ligatures .about_content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 115px;
+    margin-top: 40px;
     margin-right: 50px;
 }
 
 .weights {
     position: relative;
     width: 1440px;
-    margin: 200px auto 0;
+    margin: 100px auto 0;
     background: #D4ECFF;
     overflow: hidden;
     z-index: 1;
@@ -591,7 +623,7 @@ h1 {
 }
 /* Extra Light */
 .fish1 {
-    top: 1910px;
+    top: 1890px;
     left: 250px;
     font-size: 82.373px;
     font-weight: 275;
@@ -600,8 +632,8 @@ h1 {
 
 /* Light */
 .fish2 {
-    top: 2020px;
-    left: 1113px;
+    top: 1990px;
+    left: 1120px;
     font-size: 82.373px;
     font-weight: 300;
     transform: rotate(15deg);
@@ -618,7 +650,7 @@ h1 {
 
 /* Medium */
 .fish4 {
-    top: 1650px;
+    top: 16px;
     left: 440px;
     font-size: 78.06px;
     font-weight: 500;
@@ -645,7 +677,7 @@ h1 {
 
 /* Regular */
 .fish7 {
-    top: 2330px;
+    top: 2310px;
     left: 900px;
     font-size: 82px;
     font-weight: 400;
