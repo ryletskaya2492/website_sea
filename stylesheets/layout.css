@@ -49,6 +49,8 @@ h1 {
 .about_font {
     display: flex;
     height: 826px;
+    width: 1440px;
+    margin: 0 auto;
     background-color: #D4ECFF;
     overflow: visible;
     z-index: 2;
