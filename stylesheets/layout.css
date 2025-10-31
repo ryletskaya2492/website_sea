@@ -469,7 +469,7 @@ h1 {
     z-index: 1;
 }
 
-.canvas {
+.weights_frame {
     position: relative;
     width: 1932px;
     height: 2829px;
@@ -645,7 +645,7 @@ h1 {
     overflow: hidden;
 }
 
-.footer-canvas {
+.footer_frame {
     position: relative;
     width: 100%;
 }
